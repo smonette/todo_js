@@ -14,15 +14,18 @@ form.onsubmit = function(e) {
 	newItem.appendChild(newTextNode);
 	newItem.appendChild(newRemoveButton);
 	newRemoveButton.appendChild(newButtonText);
+
 }
 
 
 var close = document.getElementsByClassName('close');
 
 for (var i=0; i < close.length; i++) {
-	console.log("In for loop");
-
+	console.log("Inside the for loop" + i);
 	close[i].onclick = function(){
-		this.parentNode.removeChild("li");
+		console.log("Inside the onclick")
+		this.parentNode.removeChild();
 	}
 }
+
+
