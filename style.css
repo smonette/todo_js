@@ -19,7 +19,7 @@ ul#list li {
 	font-size: 16px;
 	margin: 10px 0;
 	list-style: none;
-	border-bottom: 1px solid rgba(226,210,213, 0.7);
+	border-bottom: 1px solid rgba(226,210,213, 1);
 	padding: 5px 0 10px 0;
 }
 
@@ -33,9 +33,9 @@ ul#list li a {
 	cursor: pointer;
 	font-size: 14px;
 	float: right;
+	color: white;
 }
 
 ul#list li a:hover {
 	background-color: rgba(226,87,94,1);
-	color: white;
 }
