@@ -5,16 +5,35 @@ body {
 	background-color: rgba(226,210,213, 0.5);
 	color: rgba(87,88,92, 1);
 }
-
+h1 {
+	text-align: center;
+}
 form {
 	width: 300px;
 	margin: 0 auto;
+}
+input#item {
+	width: 234px;
+	padding: 5px 10px;
+}
+input#addItem {
+	background-color: rgba(152,182,172, 0.7) ;
+	cursor: pointer;
+	border: none;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 50%;
+}
+input#addItem:hover {
+	background-color: rgba(152,182,172, 1) ;
 }
 h3 { text-align: center;}
 ul#list {
 	width: 300px;
 	margin: 0 auto;
-	padding: 0;
+	background: white;
+	padding: 20px;
+	border-bottom: 2px solid rgba(226,210,213, 1);
 }
 ul#list li {
 	font-size: 16px;

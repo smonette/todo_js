@@ -1,6 +1,3 @@
-
-
-
 var form = document.getElementById("createTasks");
 var list = document.getElementById("list");
 
