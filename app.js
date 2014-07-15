@@ -1,3 +1,6 @@
+
+
+
 var form = document.getElementById("createTasks");
 var list = document.getElementById("list");
 
@@ -15,17 +18,22 @@ form.onsubmit = function(e) {
 	newItem.appendChild(newRemoveButton);
 	newRemoveButton.appendChild(newButtonText);
 
-}
 
-
-var close = document.getElementsByClassName('close');
-
-for (var i=0; i < close.length; i++) {
-	console.log("Inside the for loop" + i);
-	close[i].onclick = function(){
+	newRemoveButton.onclick = function(){
 		console.log("Inside the onclick")
-		this.parentNode.removeChild();
-	}
-}
+		list.removeChild(newItem);
+	};
+
+};
+
+var allItems = document.getElementsByTagName('li');
+localStorage.setItem('allItems', allItems);
+
+if (allItems.length > 0) {
+	var retrievedObject = localStorage.getItem('allItems');
+	list.innerHTML = (retrievedObject);
+};
+
+
 
 
