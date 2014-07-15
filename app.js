@@ -1,6 +1,7 @@
 var form = document.getElementById("createTasks");
 var list = document.getElementById("list");
 
+
 form.onsubmit = function(e) {
 	e.preventDefault();
 
@@ -15,22 +16,18 @@ form.onsubmit = function(e) {
 	newItem.appendChild(newRemoveButton);
 	newRemoveButton.appendChild(newButtonText);
 
+	document.getElementById('item').value='';
 
 	newRemoveButton.onclick = function(){
-		console.log("Inside the onclick")
 		list.removeChild(newItem);
 	};
 
 };
 
 var allItems = document.getElementsByTagName('li');
-localStorage.setItem('allItems', allItems);
 
-if (allItems.length > 0) {
-	var retrievedObject = localStorage.getItem('allItems');
-	list.innerHTML = (retrievedObject);
-};
+for (i = 0; i < allItems.length; i++) {
+	localStorage.setItem('item' + i, allItems);
+}
 
-
-
-
+console.log(localStorage.item1)

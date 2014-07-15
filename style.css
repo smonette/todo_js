@@ -9,23 +9,35 @@ h1 {
 	text-align: center;
 }
 form {
-	width: 300px;
+	width: 340px;
 	margin: 0 auto;
+	position: relative;
+}
+input {
+	height: 40px;
 }
 input#item {
-	width: 234px;
+	width: 340px;
 	padding: 5px 10px;
+	border: none;
+	border-bottom: 2px solid rgba(226,210,213, 1);
+	font-size: 14px;
 }
 input#addItem {
-	background-color: rgba(152,182,172, 0.7) ;
+	background-color: rgba(152,182,172, 1) ;
 	cursor: pointer;
 	border: none;
 	font-size: 18px;
 	font-weight: bold;
 	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	right: -18px;
+	width: 40px;
 }
 input#addItem:hover {
-	background-color: rgba(152,182,172, 1) ;
+	background-color: rgba(87,88,92, 1);
+	color: white;
 }
 h3 { text-align: center;}
 ul#list {
